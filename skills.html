@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandip Bhatta - Skills</title>
+    <meta name="description" content="Discover the skills of Sandip Bhatta, a web developer proficient in HTML, CSS, and JavaScript.">
+    <meta name="keywords" content="Sandip Bhatta, web developer, skills, HTML, CSS, JavaScript">
+    <meta name="author" content="Sandip Bhatta">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <span>Sandip</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="index.html">Home</a></div>
+                <div class="link"><a href="about.html">About</a></div>
+                <div class="link"><a href="skills.html">Skills</a></div>
+                <div class="link"><a href="projects.html">Projects</a></div>
+                <div class="link contact-btn"><a href="contact.html">Contact Me</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact Me</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section id="skills" class="skills-section">
+        <h1>My Skills</h1>
+        <div class="skills-container">
+            <p>
+                I am a passionate and growing web developer with a strong foundation in 
+                <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. I specialize in creating 
+                responsive and visually appealing websites using modern design principles. My understanding of 
+                <strong>CSS animations</strong> and layout techniques like <strong>flexbox</strong> and <strong>grid</strong> 
+                allows me to build seamless user experiences across different devices. 
+            </p>
+            <p>
+                I am familiar with tools like <strong>Visual Studio Code</strong>, <strong>Git</strong>, and <strong>GitHub</strong> 
+                for coding, version control, and collaboration. Additionally, my experience with <strong>Figma</strong> and 
+                <strong>Canva</strong> helps me design prototypes and graphics for websites and social media platforms. 
+            </p>
+            <p>
+                Currently, I am advancing my knowledge in <strong>JavaScript</strong> and planning to dive into frameworks like 
+                <strong>React</strong> and backend technologies like <strong>Node.js</strong> and <strong>MongoDB</strong>. 
+                My goal is to become a skilled full-stack developer, capable of building dynamic and user-friendly applications. 
+            </p>
+        </div>
+    </section>
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+    </script>
+</body>
+</html>
